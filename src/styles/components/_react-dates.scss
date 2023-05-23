@@ -1,0 +1,15 @@
+.DateInput {
+    width: 34.6rem;
+    flex-grow: 1;
+}
+
+@media (max-width: $desktop-breakpoint) {
+    .DateInput {     
+        width: 45%;   
+        flex-grow: 1;
+    }
+
+    .DateRangePickerInput, .DateRangePicker{
+        width: 100%;
+    }
+}

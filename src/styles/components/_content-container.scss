@@ -1,0 +1,19 @@
+.header-container {
+  margin: 0 auto;
+  padding: 0 $m-size;
+  max-width: 80rem;  
+}
+
+.content-container {
+  margin: 5rem auto;
+  padding: 0 $m-size;
+  max-width: 80rem;
+  background-color: $inner-grey;
+  border: 10px solid $border-box;
+}
+
+@media (max-width: $desktop-breakpoint) {
+  .content-container {
+    margin: 2rem auto;
+  }
+}

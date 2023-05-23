@@ -1,0 +1,194 @@
+.room-list__container {
+    margin: 5rem 30rem;
+    padding: 0 $m-size;
+    //max-width: 80rem;
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    //border: 2px solid $border-box;
+    color: #909090;
+  }
+
+.room-list__left {    
+    width: 70%;
+    
+    .room-view {
+        display: flex;
+        flex-direction: column;  
+    }   
+}
+
+.room-list__right {    
+    width: 30%;
+}
+
+.room-list__room-item {        
+    display: flex;
+    flex-direction: row;    
+    margin-bottom: 2rem;    
+
+    .room-image {
+        width: 22%;           
+    }
+
+    .room-info {
+        width: 72%;        
+        padding: 0 10px;                
+        font-size: 14px;
+
+        h3 {
+            font-size: 2rem; 
+            margin-bottom: 0.2rem;       
+        }
+        
+        a {
+            color: $green-link;
+        }
+
+        a:hover, a:focus {
+            color: #636363;
+            text-decoration: none;
+            outline: none;
+        }
+        .rating {
+            color: #fb0;
+            font-size: 1.6rem;
+            
+        }
+        .review {
+            display: flex;
+            margin: 10px 0;
+        }                
+    }
+}
+
+.room-list__navigator {
+    border: 1px solid #d5d5d5;    
+    width: 100%;    
+    padding-right: 5px;        
+    margin-bottom: 2rem;    
+    
+    ul {              
+        display: flex;
+        list-style: none;      
+        margin: 0;                          
+            
+        li.pull-right {
+            margin-left: auto;                           
+        }       
+        
+        li {                              
+            line-height: 3rem;
+
+            a {
+                display: block; // for full bakcground-color
+                text-decoration: none;
+                color: #91b54d;
+                cursor: pointer; 
+                padding: 10px 15px;                   
+            }
+            
+            a:hover, a:focus {
+                background-color: #91b54d;
+                color: #ffffff !important;
+                outline: none;
+            }
+        }
+
+        .dropdown {
+            //overflow: hidden;            
+            position: relative;
+
+            .dropdown-content {
+                display: none;                                
+                padding: 0;                
+                position: absolute;
+                background: #ffffff;
+                border: 1px solid #d5d5d5;
+                left: 0;
+                top: 100%;
+                width: 100%;
+            }
+            .show {
+                display: flex;                
+                flex: 1;
+                flex-direction: column;
+                z-index: 1;
+                min-width: 160px;
+            }
+        }
+    }    
+    
+}
+
+.review-score-badge {
+    display: inline-block;
+    width: 32px;
+    line-height: 32px;        
+    border-radius: 5px 5px 0 5px;
+    font-size: 1.6rem;
+    text-align: center;
+    margin-right: 5px;
+    background-color: transparent;
+    border: 1px solid #e1e1e1;
+    color: #91b54d;
+}
+
+.room-types {
+    line-height: 15px;
+    min-height: 15px;
+    border-top: 1px solid #EEE;
+    border-color: #e1e1e1;
+    font-size: 1.2rem;
+    color: #909090;    
+}
+
+.room-capacity {
+    background: #91b54d;
+    padding: 2px 10px 2px 6px;
+    font-size: 1.2rem;
+}
+
+.review-score-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.review-comment {
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+
+.filter-panel {
+    margin-bottom: 10px;
+    
+    fieldset {
+        padding: 0;
+        border: 0;        
+    }
+
+    legend {
+        font-size: 14px;
+        color: #909090;
+        font-weight: bold;
+        display: block;
+        width: 100%;
+        padding: 0;
+        margin-bottom: 20px;
+        line-height: 40px;
+        color: #595959;
+        border: 0;    
+        border-bottom: 1px solid #e5e5e5;
+    }
+
+    .list-unstyled {
+        list-style: none;
+        padding-left: 20px;
+    }
+}
+  
+@media (max-width: $desktop-breakpoint) {
+.room-list__middle {
+    margin: 2rem auto;
+}
+}
